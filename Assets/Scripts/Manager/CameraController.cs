@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
         vcam = GetComponent<CinemachineVirtualCamera>();
     }
 
+    // Update is called once per frame
     void Update()
     {
         if (tPlayer == null)

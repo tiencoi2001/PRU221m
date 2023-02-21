@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 011b8b8bf572a4a45b029063cb41d721
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - firePoint: {instanceID: 0}
+  - rangeWeapon: {fileID: 2050071383160478449, guid: 18298db76b993e640a7246e9884ae523, type: 3}
+  - meleeWeapon: {fileID: 148725120616052740, guid: fe5930b706f47ca4cbcb2947be959018, type: 3}
+  - mainBullet: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
