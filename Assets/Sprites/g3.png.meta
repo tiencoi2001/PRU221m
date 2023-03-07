@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: g3_Idle
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 832
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325b6c3f410687f40b7166c19dd39504
+      internalID: -2002756862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Attack_2_5
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 264
+        width: 72
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef896503eab0424b9bc9dda3be71a26
+      internalID: -1353724427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Attack_2_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 267
+        width: 73
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f66ed233daebf409ffcc8183090c34
+      internalID: -878547737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Attack_2_2
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 267
+        width: 73
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5219bca60b50b243b20fb243877f789
+      internalID: 83007865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Attack_2_3
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 267
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6097f4677ba5c489dd392183aa54b7
+      internalID: 926341608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Attack_2_4
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 267
+        width: 72
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137ac6ca0d9515245a469e883918975c
+      internalID: 16331503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Die_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 37
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdbc641bf05140428dfc318f7c2f4ab
+      internalID: -1778471563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Die_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 37
+        width: 82
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745f4b432c3ad804c884b3cb3d8dd8ad
+      internalID: -580286170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Die_2
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 37
+        width: 79
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0768e0ff86770f4fadaa978c352b043
+      internalID: 778898814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Die_4
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 37
+        width: 97
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a8dabb940e09b42a2bf80fe4c4392d
+      internalID: -71992871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g3_Die_5
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 37
+        width: 95
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb2f6c8a19605b41b127af884a0cdd6
+      internalID: -107402474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +345,67 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      g3_51: -1030247976
+      g3_18: 1231874284
+      g3_21: -1189933279
+      g3_28: 620300434
+      g3_Die_3: -580286170
+      g3_32: 1627552019
+      g3_Idle: -2002756862
+      g3_11: 723601010
+      g3_48: -733329455
+      g3_9: -1312728744
+      g3_42: 1468561154
+      g3_Attack_2_3: 926341608
+      g3_19: -379753741
+      g3_17: -1666333714
+      g3_Die_1: -1778471563
+      g3_29: -541275827
+      g3_53: -25732008
+      g3_2: 1355364581
+      g3_23: 1680436096
+      g3_10: 526363512
+      g3_34: -822251191
+      g3_Attack_2_4: 16331503
+      g3_Attack_2_2: 83007865
+      g3_35: -1895028082
+      g3_36: -1298469958
+      g3_26: -1127177221
+      g3_5: -1884006072
+      g3_Attack_2_1: -878547737
+      g3_Die_4: -71992871
+      g3_30: -1267819861
+      g3_41: -2097010202
+      g3_24: 66749072
+      g3_Attack_2_5: -1353724427
+      g3_13: 239907835
+      g3_16: 1700723631
+      g3_20: -1006895420
+      g3_Die_2: 778898814
+      g3_7: -217880137
+      g3_33: 1731745396
+      g3_15: 1690349991
+      g3_22: -1874174178
+      g3_37: -2079230534
+      g3_39: 1643449230
+      g3_25: 1263248555
+      g3_4: -803675995
+      g3_12: 1729547260
+      g3_50: -535244997
+      g3_6: -1809688657
+      g3_Die_5: -107402474
+      g3_3: -1283726244
+      g3_0: 995705321
+      g3_31: -859989924
+      g3_27: 1328946443
+      g3_49: -970580003
+      g3_8: 1325100120
+      g3_43: -1858150981
+      g3_52: -1972696994
+      g3_54: -1425843163
+      g3_14: -746196367
+      g3_38: -90627016
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

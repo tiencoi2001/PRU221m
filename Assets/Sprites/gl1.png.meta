@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: gl1_Idle
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 416
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624cae0226ebbb94089f872e5ef2f5a3
+      internalID: -961303031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Attack_2_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 140
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23539503685946d44b9e5818123ba8f7
+      internalID: -1536871127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Attack_2_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 140
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747b631cfcee6ca4eb1ea3df4307329c
+      internalID: 1037866758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Attack_2_3
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 140
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1c76034514a1f4590816c842414aac
+      internalID: -561269173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Attack_2_4
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 140
+        width: 43
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8348201c137204d9414f77f41b2c90
+      internalID: 1297674091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Attack_2_5
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 140
+        width: 42
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a8bb7c9dd5b874eaceea109d948c8f
+      internalID: 926863499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Attack_2_6
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 140
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2859e55f583d5764d9440f221de4f47e
+      internalID: 794429415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Attack_2_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 140
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9abed86e60a06c46bf949a388420f60
+      internalID: 1608876980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Die_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 24
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e85e25d063855c45a0031730378bc0b
+      internalID: -2024715656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Die_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 24
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0e622b6c5a46146ad458fd7cd678f2
+      internalID: -1742148281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Die_3
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 24
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567fa86c4519bbf4a9f9d6f01efdc7ba
+      internalID: -1302803442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Die_4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 24
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b528840d858f5c54bbc11af5779e3c89
+      internalID: 42391639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Die_5
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 24
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd6589489bc5ae4988c67ce16dd1aea
+      internalID: 1295048428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Die_6
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 24
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43450c288277044fb7907153962c9d6
+      internalID: -476500308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gl1_Die_7
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 24
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a27577679abcef45b72c935506d2cb3
+      internalID: 1872285359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +429,72 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gl1_Die_4: 42391639
+      gl1_14: 152340198
+      gl1_28: 1031723981
+      gl1_13: -1516243036
+      gl1_21: 355087438
+      gl1_51: -1178914276
+      gl1_53: 200879575
+      gl1_55: 2049907851
+      gl1_50: -240456180
+      gl1_3: -810342104
+      gl1_38: -1048279510
+      gl1_58: -841895957
+      gl1_Die_6: -476500308
+      gl1_10: -81678094
+      gl1_29: 1861509004
+      gl1_Die_7: 1872285359
+      gl1_11: -1340749802
+      gl1_35: 1654876015
+      gl1_36: -1967286025
+      gl1_34: -862052173
+      gl1_8: -982752672
+      gl1_16: 1260593055
+      gl1_18: -1232884515
+      gl1_22: 1502646756
+      gl1_Idle: -961303031
+      gl1_0: 250002074
+      gl1_19: -50531023
+      gl1_26: -391080202
+      gl1_32: -882656275
+      gl1_Attack_2_3: -561269173
+      gl1_Attack_2_5: 926863499
+      gl1_20: -781114806
+      gl1_27: -2086714405
+      gl1_2: 1156764223
+      gl1_57: -1368966856
+      gl1_25: 713524525
+      gl1_37: 94839521
+      gl1_56: -496570158
+      gl1_15: -453995772
+      gl1_30: 1551368067
+      gl1_39: 9476013
+      gl1_7: 234962256
+      gl1_Attack_2_2: 1037866758
+      gl1_Attack_2_4: 1297674091
+      gl1_41: 1025819285
+      gl1_6: 448375265
+      gl1_12: 335286051
+      gl1_Die_3: -1302803442
+      gl1_Attack_2_7: 1608876980
+      gl1_31: 1927842048
+      gl1_33: -1728956557
+      gl1_42: 579641795
+      gl1_4: 711089014
+      gl1_52: -1802654153
+      gl1_Attack_2_6: 794429415
+      gl1_Die_1: -2024715656
+      gl1_Die_5: 1295048428
+      gl1_40: 1705806550
+      gl1_Die_2: -1742148281
+      gl1_17: 715647880
+      gl1_Attack_2_1: -1536871127
+      gl1_23: -1759218929
+      gl1_54: 103994919
+      gl1_9: -1083772536
+      gl1_24: -1912671592
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: g2_Idle
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 838
+        width: 76
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a84304f3be04245851395c5626ea70
+      internalID: 7071466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Attack_2_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 267
+        width: 72
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb6990a7c306b24683c4aeeb335654c
+      internalID: -1471757060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Attack_2_4
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 267
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f238818aae80a5249b794c5376fa918f
+      internalID: -731224133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Attack_2_2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 267
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313da4033dac68146a6065f6714af432
+      internalID: 568866141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Attack_2_3
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 267
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9490197fc3b9a9499465c20531062d9
+      internalID: -1644249984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Attack_2_5
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 267
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123fec263741d6145a73e927097485a1
+      internalID: 591756823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Die_1
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 39
+        width: 74
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991168fc0fb22244cac08b75203a9b43
+      internalID: -1146944773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Die_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 39
+        width: 108
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bc07312b1fb4142bf48e44a57e8491
+      internalID: -1883593192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Die_3
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 39
+        width: 87
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cece703a72aa75d408153993cd2362e2
+      internalID: 1649257935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Die_4
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 39
+        width: 126
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f548757fcd9a6344bbe89319663a3c1
+      internalID: -1792952356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: g2_Die_5
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 39
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b94088839b3c9488c04db738f9f38d
+      internalID: 546011682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +345,58 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      g2_20: 16312110
+      g2_2: 1121444679
+      g2_22: 2085962190
+      g2_17: -748047530
+      g2_19: 1702283905
+      g2_18: 128777140
+      g2_34: -405446416
+      g2_10: 799099086
+      g2_41: 1867526547
+      g2_44: 2112565883
+      g2_Attack_2_1: -1471757060
+      g2_6: 1683594184
+      g2_Attack_2_2: 568866141
+      g2_13: 705743880
+      g2_26: -1219300998
+      g2_Die_1: -1146944773
+      g2_29: 314570350
+      g2_35: -1261968783
+      g2_47: -304261813
+      g2_Attack_2_4: -731224133
+      g2_Idle: 7071466
+      g2_Die_4: -1792952356
+      g2_40: -1977946603
+      g2_16: -2035385390
+      g2_4: -1234950008
+      g2_23: 1951455038
+      g2_24: 2117938633
+      g2_45: -228216746
+      g2_Die_5: 546011682
+      g2_42: -1773929067
+      g2_28: -517880354
+      g2_11: -1110629155
+      g2_8: -1554052082
+      g2_25: 1275011396
+      g2_Attack_2_5: 591756823
+      g2_12: -1460790251
+      g2_Die_3: 1649257935
+      g2_Attack_2_3: -1644249984
+      g2_27: 409724500
+      g2_7: -2141400145
+      g2_43: -179766094
+      g2_Die_2: -1883593192
+      g2_31: -378681519
+      g2_36: -1387132697
+      g2_30: -173082528
+      g2_46: 1748263364
+      g2_21: -1325306848
+      g2_14: 137328754
+      g2_15: 1287410087
+      g2_0: -1395800824
+      g2_9: 472591225
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
