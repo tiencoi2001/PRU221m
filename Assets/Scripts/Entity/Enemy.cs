@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     private float hp;
     public float atk;
 
+    public EnemyState currentState { get; private set; }
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,8 @@ public class Enemy : MonoBehaviour
         gameObject.GetComponent<HealthSystem>().CurrentHealth = hp;
         gameObject.GetComponent<HealthSystem>().MaximumHealth = hp;
         gameObject.GetComponent<HealthSystem>().IsAlive = true;
+
+        ChangeState(new WalkState(this));
     }
 
     // Update is called once per frame
@@ -48,10 +51,10 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         if (player != null)
         {
-            float step = MoveUnitsPerSecond * Time.deltaTime;
-            //Find position of player and approach him
-            Vector3 point = new Vector3(player.transform.position.x, player.transform.position.y, -Camera.main.transform.position.z);
-            transform.position = Vector2.MoveTowards(transform.position, point, step);
+            //float step = MoveUnitsPerSecond * Time.deltaTime;
+            ////Find position of player and approach him
+            //Vector3 point = new Vector3(player.transform.position.x, player.transform.position.y, -Camera.main.transform.position.z);
+            //transform.position = Vector2.MoveTowards(transform.position, point, step);
 
             //float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
             //if (distanceToPlayer <= attackRange)
@@ -66,6 +69,26 @@ public class Enemy : MonoBehaviour
             //{
             //    MoveUnitsPerSecond = speed;
             //}
+        }
+
+        if (currentState != null)
+        {
+            currentState.Update();
+        }
+    }
+
+    public void ChangeState(EnemyState newState)
+    {
+        if (currentState != null)
+        {
+            currentState.Exit();
+        }
+
+        currentState = newState;
+
+        if (currentState != null)
+        {
+            currentState.Enter();
         }
     }
 

@@ -10,7 +10,10 @@ namespace Assets.Scripts.Entity.State
     public abstract class EnemyState
     {
         protected Enemy enemy;
-
+        public EnemyState(Enemy enemy)
+        {
+            this.enemy = enemy;
+        }
         public virtual void Enter() { }
 
         public virtual void Update() { }

@@ -10,10 +10,7 @@ namespace Assets.Scripts.Entity.State
     public class DieState : EnemyState
     {
 
-        public DieState(Enemy enemy)
-        {
-            this.enemy = enemy;
-        }
+        public DieState(Enemy enemy) : base(enemy) { }
 
         public override void Enter()
         {

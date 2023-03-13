@@ -11,7 +11,7 @@ namespace Assets.Scripts.Entity.State
     {
         private float attackCooldown = 0f;
 
-        public AttackState(Enemy enemy)
+        public AttackState(Enemy enemy) : base(enemy)
         {
         }
 
@@ -36,7 +36,7 @@ namespace Assets.Scripts.Entity.State
                 enemy.MoveUnitsPerSecond = enemy.speed;
 
                 // Transition to WalkState
-                enemy.TransitionToState(new WalkState(enemy));
+                enemy.ChangeState(new WalkState(enemy));
             }
         }
 
