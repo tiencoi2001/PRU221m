@@ -9,8 +9,6 @@ namespace Assets.Scripts.Entity.State
 {
     public class AttackState : EnemyState
     {
-        private float attackCooldown = 0f;
-
         public AttackState(Enemy enemy) : base(enemy)
         {
         }

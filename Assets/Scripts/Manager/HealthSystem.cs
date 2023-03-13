@@ -113,7 +113,7 @@ public class HealthSystem : MonoBehaviour
     public void Kill()
     {
         float previousHealth = CurrentHealth;
-
+        
         CurrentHealth = 0;
         IsAlive = false;
 

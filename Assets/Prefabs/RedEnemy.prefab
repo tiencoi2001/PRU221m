@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: -1393217893588405218}
   - component: {fileID: -7177014379230742271}
   - component: {fileID: -7986977083486708455}
-  - component: {fileID: -8901473004990179139}
   - component: {fileID: 320915971175299253}
   - component: {fileID: 2744303787580895805}
+  - component: {fileID: 3229297989128508677}
   m_Layer: 0
   m_Name: RedEnemy
   m_TagString: Enemy
@@ -140,31 +140,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788e4e522cee9834d961159bddb5c8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   speed: 2
   baseATK: 5
   baseHP: 200
   attackRange: 2
   cdTime: 3
---- !u!95 &-8901473004990179139
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7970205845878994290}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7d2e4ffffe6b4804581d9ee115f499a0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  MoveUnitsPerSecond: 0
+  atk: 0
 --- !u!114 &320915971175299253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +211,26 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   HealthBarPrefabToSpawn: {fileID: 1896192369536451222, guid: 56af1d8762815414daf27dcbb5af473c, type: 3}
+--- !u!95 &3229297989128508677
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7970205845878994290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &7076522688196272449
 PrefabInstance:
   m_ObjectHideFlags: 0
