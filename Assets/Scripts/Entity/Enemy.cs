@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("Player");
         //if (player != null)
         //{
         //    //float step = MoveUnitsPerSecond * Time.deltaTime;
