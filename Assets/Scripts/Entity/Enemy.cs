@@ -1,30 +1,34 @@
+using Assets.Scripts.Entity;
+using Assets.Scripts.Entity.State;
 using Assets.Scripts.Entity.Weapons;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
 
-    GameObject player;
+    public GameObject player;
     [SerializeField]
-    float speed;
+    public float speed;
     [SerializeField]
     float baseATK;
     [SerializeField]
     float baseHP;
     [SerializeField]
-    float attackRange;
+    public float attackRange;
     [SerializeField]
     private float cdTime;
 
-    private float MoveUnitsPerSecond;
+    public float MoveUnitsPerSecond;
     private float waitTime;
 
     private float hp;
-    private float atk;
+    public float atk;
 
     // Start is called before the first frame update
     void Start()
@@ -49,19 +53,19 @@ public class Enemy : MonoBehaviour
             Vector3 point = new Vector3(player.transform.position.x, player.transform.position.y, -Camera.main.transform.position.z);
             transform.position = Vector2.MoveTowards(transform.position, point, step);
 
-            float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
-            if (distanceToPlayer <= attackRange)
-            {
-                MoveUnitsPerSecond = 0f;
-                if (CoolDownAttack(Time.deltaTime))
-                {
-                    Attack(atk);
-                }
-            }
-            else
-            {
-                MoveUnitsPerSecond = speed;
-            }
+            //float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
+            //if (distanceToPlayer <= attackRange)
+            //{
+            //    MoveUnitsPerSecond = 0f;
+            //    if (CoolDownAttack(Time.deltaTime))
+            //    {
+            //        Attack(atk);
+            //    }
+            //}
+            //else
+            //{
+            //    MoveUnitsPerSecond = speed;
+            //}
         }
     }
 
@@ -73,7 +77,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Attack(float damage)
+    public void Attack(float damage)
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<HealthSystem>().GotHitFor(damage);
@@ -81,7 +85,7 @@ public class Enemy : MonoBehaviour
         player.GetComponent<Player>().timeToHealth = 5f;
     }
 
-    bool CoolDownAttack(float deltaTime)
+    public bool CoolDownAttack(float deltaTime)
     {
         if (waitTime >= cdTime)
         {
