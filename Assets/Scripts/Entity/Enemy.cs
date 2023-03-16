@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour
     public float atk;
 
     public EnemyState currentState { get; private set; }
+
+    private bool isDeath = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +56,12 @@ public class Enemy : MonoBehaviour
         {
             currentState.Update();
         }
+        if (isDeath)
+        {
+            Debug.Log("Die");
+            ChangeState(new DieState(this));
+            isDeath = false;
+        }
     }
 
     public void ChangeState(EnemyState newState)
@@ -62,7 +70,7 @@ public class Enemy : MonoBehaviour
         {
             currentState.Exit();
         }
-
+        Debug.Log(newState.GetType().Name);
         currentState = newState;
 
         if (currentState != null)
@@ -128,6 +136,8 @@ public class Enemy : MonoBehaviour
         int wave = Convert.ToInt32(GameObject.Find("WaveCounter").GetComponent<Text>().text);
         if (!isAlive)
         {
+            ChangeState(new DieState(this));
+            isDeath = true;
             AudioManager.Instance.PlayAudioOneShot((AudioClip)Resources.Load("Audios/Bonus"), 0.5f);
             if ((wave) % 5 == 0 && (wave) > 0)
             {
