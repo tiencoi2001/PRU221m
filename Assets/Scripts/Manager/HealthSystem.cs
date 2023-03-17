@@ -82,13 +82,14 @@ public class HealthSystem : MonoBehaviour
         {
             IsAlive = false;
             AudioManager.Instance.PlayAudioOneShot((AudioClip)Resources.Load("Audios/KillSound"), 0.1f);
+            OnIsAliveChanged.Invoke(IsAlive);
             StartCoroutine(InvokeOnIsAliveChangedWithDelay());
         }
     }
     IEnumerator InvokeOnIsAliveChangedWithDelay()
     {
-        yield return new WaitForSeconds(0f); // wait for 0.5 seconds
-        OnIsAliveChanged.Invoke(IsAlive);
+        yield return new WaitForSeconds(0.4f); // wait for 1 seconds
+        gameObject.SetActive(IsAlive);
     }
 
     public void ReviveWithMaximumHealth()

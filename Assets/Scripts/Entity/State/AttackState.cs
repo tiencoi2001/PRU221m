@@ -16,6 +16,7 @@ namespace Assets.Scripts.Entity.State
         public override void Enter()
         {
             // Set animator to attacking animation
+            enemy.GetComponent<Animator>().SetBool("IsAttack", true);
         }
 
         public override void Update()
@@ -28,11 +29,14 @@ namespace Assets.Scripts.Entity.State
                 {
                     enemy.Attack(enemy.atk);
                 }
+                else
+                {
+                    enemy.ChangeState(new IdleState(enemy));
+                }
             }
             else
             {
                 enemy.MoveUnitsPerSecond = enemy.speed;
-
                 // Transition to WalkState
                 enemy.ChangeState(new WalkState(enemy));
             }
@@ -41,6 +45,7 @@ namespace Assets.Scripts.Entity.State
         public override void Exit()
         {
             // Reset animator to default
+            enemy.GetComponent<Animator>().SetBool("IsAttack", false);
 
         }
     }

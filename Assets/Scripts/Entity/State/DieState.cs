@@ -15,20 +15,20 @@ namespace Assets.Scripts.Entity.State
         public override void Enter()
         {
             // Set animator to die animation
-            enemy.GetComponent<Animator>().SetBool("IsDie", true);
+            enemy.GetComponent<Animator>().SetTrigger("IsDie");
             enemy.GetComponent<Collider2D>().enabled = false;
         }
 
         public override void Update()
         {
             // Do nothing
-            //enemy.GetComponent<Animator>().SetBool("IsDie", true);
 
         }
 
         public override void Exit()
         {
             // Reset animator to default
+            enemy.GetComponent<Animator>().ResetTrigger("IsDie");
 
         }
     }
