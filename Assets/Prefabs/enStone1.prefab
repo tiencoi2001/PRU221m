@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519462497785913383}
   - component: {fileID: 6477478764479783517}
-  - component: {fileID: 6298727425603906154}
   - component: {fileID: 5241367787464958395}
   - component: {fileID: 4999848364328321721}
   - component: {fileID: 2724073340170673534}
@@ -91,26 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6298727425603906154
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450009375645318336}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4fac499eec04d9d45bb16284aa9b7f59, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &5241367787464958395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,11 +102,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788e4e522cee9834d961159bddb5c8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   speed: 1
   baseATK: 20
   baseHP: 600
   attackRange: 1
   cdTime: 5
+  MoveUnitsPerSecond: 0
+  atk: 0
 --- !u!50 &4999848364328321721
 Rigidbody2D:
   serializedVersion: 4

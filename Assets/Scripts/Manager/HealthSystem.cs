@@ -1,3 +1,5 @@
+using Assets.Scripts.Entity.State;
+using System.Collections;
 using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
@@ -81,7 +83,13 @@ public class HealthSystem : MonoBehaviour
             IsAlive = false;
             AudioManager.Instance.PlayAudioOneShot((AudioClip)Resources.Load("Audios/KillSound"), 0.1f);
             OnIsAliveChanged.Invoke(IsAlive);
+            StartCoroutine(InvokeOnIsAliveChangedWithDelay());
         }
+    }
+    IEnumerator InvokeOnIsAliveChangedWithDelay()
+    {
+        yield return new WaitForSeconds(0.4f); // wait for 1 seconds
+        gameObject.SetActive(IsAlive);
     }
 
     public void ReviveWithMaximumHealth()
@@ -113,15 +121,30 @@ public class HealthSystem : MonoBehaviour
     public void Kill()
     {
         float previousHealth = CurrentHealth;
-
+        
         CurrentHealth = 0;
         IsAlive = false;
 
-
+        //ChangeState(new DieState(this));
         AudioManager.Instance.PlayAudioOneShot((AudioClip)Resources.Load("Audios/KillSound"), 0.1f);
         OnIsAliveChanged.Invoke(IsAlive);
         OnCurrentHealthChanged.Invoke(new CurrentHealth(previousHealth, CurrentHealth, CurrentHealthPercentage));
     }
+
+    //public void ChangeState(EnemyState newState)
+    //{
+    //    if (currentState != null)
+    //    {
+    //        currentState.Exit();
+    //    }
+
+    //    currentState = newState;
+
+    //    if (currentState != null)
+    //    {
+    //        currentState.Enter();
+    //    }
+    //}
 
     //public void Dead(bool isAlive)
     //{

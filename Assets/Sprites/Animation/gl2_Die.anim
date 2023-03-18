@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: gl2_Die
+  m_Name: GL2_Die
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,17 +21,17 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 415797122, guid: c09be1edd7b31fd44af062e8a4841acc, type: 3}
-    - time: 0.11666667
+    - time: 0.16666667
       value: {fileID: -522376050, guid: c09be1edd7b31fd44af062e8a4841acc, type: 3}
-    - time: 0.23333333
+    - time: 0.33333334
       value: {fileID: -1270676116, guid: c09be1edd7b31fd44af062e8a4841acc, type: 3}
-    - time: 0.35
+    - time: 0.5
       value: {fileID: 303073438, guid: c09be1edd7b31fd44af062e8a4841acc, type: 3}
-    - time: 0.46666667
+    - time: 0.6666667
       value: {fileID: 179270295, guid: c09be1edd7b31fd44af062e8a4841acc, type: 3}
-    - time: 0.5833333
+    - time: 0.8333333
       value: {fileID: -1320158704, guid: c09be1edd7b31fd44af062e8a4841acc, type: 3}
-    - time: 0.7
+    - time: 1
       value: {fileID: 1952262539, guid: c09be1edd7b31fd44af062e8a4841acc, type: 3}
     attribute: m_Sprite
     path: 
@@ -64,7 +64,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.71666664
+    m_StopTime: 1.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

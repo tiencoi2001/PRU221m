@@ -1,31 +1,36 @@
+using Assets.Scripts.Entity;
+using Assets.Scripts.Entity.State;
 using Assets.Scripts.Entity.Weapons;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
 
-    GameObject player;
+    public GameObject player;
     [SerializeField]
-    float speed;
+    public float speed;
     [SerializeField]
     float baseATK;
     [SerializeField]
     float baseHP;
     [SerializeField]
-    float attackRange;
+    public float attackRange;
     [SerializeField]
     private float cdTime;
 
-    private float MoveUnitsPerSecond;
+    public float MoveUnitsPerSecond;
     private float waitTime;
 
     private float hp;
-    private float atk;
+    public float atk;
 
+    public EnemyState currentState { get; private set; }
     // Start is called before the first frame update
     void Start()
     {
@@ -36,32 +41,33 @@ public class Enemy : MonoBehaviour
         gameObject.GetComponent<HealthSystem>().CurrentHealth = hp;
         gameObject.GetComponent<HealthSystem>().MaximumHealth = hp;
         gameObject.GetComponent<HealthSystem>().IsAlive = true;
+
+        ChangeState(new WalkState(this));
     }
 
     // Update is called once per frame
     void Update()
     {
         player = GameObject.FindWithTag("Player");
-        if (player != null)
-        {
-            float step = MoveUnitsPerSecond * Time.deltaTime;
-            //Find position of player and approach him
-            Vector3 point = new Vector3(player.transform.position.x, player.transform.position.y, -Camera.main.transform.position.z);
-            transform.position = Vector2.MoveTowards(transform.position, point, step);
 
-            float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
-            if (distanceToPlayer <= attackRange)
-            {
-                MoveUnitsPerSecond = 0f;
-                if (CoolDownAttack(Time.deltaTime))
-                {
-                    Attack(atk);
-                }
-            }
-            else
-            {
-                MoveUnitsPerSecond = speed;
-            }
+        if (currentState != null)
+        {
+            currentState.Update();
+        }
+    }
+
+    public void ChangeState(EnemyState newState)
+    {
+        if (currentState != null)
+        {
+            currentState.Exit();
+        }
+        Debug.Log(newState.GetType().Name);
+        currentState = newState;
+
+        if (currentState != null)
+        {
+            currentState.Enter();
         }
     }
 
@@ -73,7 +79,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Attack(float damage)
+    public void Attack(float damage)
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<HealthSystem>().GotHitFor(damage);
@@ -81,7 +87,7 @@ public class Enemy : MonoBehaviour
         player.GetComponent<Player>().timeToHealth = 5f;
     }
 
-    bool CoolDownAttack(float deltaTime)
+    public bool CoolDownAttack(float deltaTime)
     {
         if (waitTime >= cdTime)
         {
@@ -122,6 +128,7 @@ public class Enemy : MonoBehaviour
         int wave = Convert.ToInt32(GameObject.Find("WaveCounter").GetComponent<Text>().text);
         if (!isAlive)
         {
+            ChangeState(new DieState(this));
             AudioManager.Instance.PlayAudioOneShot((AudioClip)Resources.Load("Audios/Bonus"), 0.5f);
             if ((wave) % 5 == 0 && (wave) > 0)
             {
