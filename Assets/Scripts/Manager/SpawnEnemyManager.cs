@@ -1,12 +1,31 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class SpawnEnemyManager : MonoBehaviour, IDataPersistance
 {
+    public enum Group
+    {
+        Group1, Group2, Group3
+    }
+
+    public Group group = Group.Group1;
+    private GroupFactory Factory;
+    private string[] groupEnemy;
+    private void GroupConfig()
+    {
+        switch (group)
+        {
+            case Group.Group1: Factory = new Group1Factory(); break;
+            case Group.Group2: Factory = new Group2Factory(); break;
+            case Group.Group3: Factory = new Group3Factory(); break;
+        }
+    }
+
     public static bool canSave = false;
     public enum SpawnState { SPAWNING, WAITTING, COUNTING }
 
@@ -37,6 +56,8 @@ public class SpawnEnemyManager : MonoBehaviour, IDataPersistance
 
     void Start()
     {
+        GroupConfig();
+        groupEnemy = Factory.CreateEnemy();
         WaveCountDown();
         GameObject.Find("WaveCounter").GetComponent<Text>().text = nextWave.ToString();
         waveCountDown = timeBetweenWaves;
@@ -200,13 +221,13 @@ public class SpawnEnemyManager : MonoBehaviour, IDataPersistance
         switch (number)
         {
             case 1:
-                objectPooler.SpawnFromPool("Enemy 1", new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0), Quaternion.identity);
+                objectPooler.SpawnFromPool(groupEnemy[0], new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0), Quaternion.identity);
                 break;
             case 2:
-                objectPooler.SpawnFromPool("Enemy 2", new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0), Quaternion.identity);
+                objectPooler.SpawnFromPool(groupEnemy[1], new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0), Quaternion.identity);
                 break;
             case 3:
-                objectPooler.SpawnFromPool("Enemy 3", new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0), Quaternion.identity);
+                objectPooler.SpawnFromPool(groupEnemy[2], new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0), Quaternion.identity);
                 break;
         }
     }
