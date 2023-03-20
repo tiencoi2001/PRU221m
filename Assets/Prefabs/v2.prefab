@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 2724073340170673534}
   - component: {fileID: -9180433012420658389}
   - component: {fileID: 6981245981538006138}
-  - component: {fileID: 3650483716472479602}
+  - component: {fileID: 7219059185679146695}
   m_Layer: 0
-  m_Name: gl1
+  m_Name: v2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450009375645318336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.2895, y: -12.992, z: 0}
-  m_LocalScale: {x: 1.44, y: 1.5280088, z: 1.5279218}
+  m_LocalPosition: {x: -34.216, y: -12.992, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5718740046098238106}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -961303031, guid: 9458414de206c4f4298ee6ba46458dd5, type: 3}
+  m_Sprite: {fileID: -1883946420, guid: 496bb08711e3404459c6933ede912406, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   HealthBarPrefabToSpawn: {fileID: 1896192369536451222, guid: 56af1d8762815414daf27dcbb5af473c, type: 3}
---- !u!95 &3650483716472479602
+--- !u!95 &7219059185679146695
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -221,7 +221,7 @@ Animator:
   m_GameObject: {fileID: 1450009375645318336}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3770e93f83410934f939f9af6257dc88, type: 2}
+  m_Controller: {fileID: 9100000, guid: 08d074206ff23444d879fa8818399346, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -316,11 +316,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1896192369536451218, guid: 56af1d8762815414daf27dcbb5af473c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.078
       objectReference: {fileID: 0}
     - target: {fileID: 1896192369536451218, guid: 56af1d8762815414daf27dcbb5af473c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.5
+      value: -0.624
       objectReference: {fileID: 0}
     - target: {fileID: 1896192369536451218, guid: 56af1d8762815414daf27dcbb5af473c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

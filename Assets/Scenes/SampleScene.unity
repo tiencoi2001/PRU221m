@@ -8402,6 +8402,30 @@ MonoBehaviour:
     prefab: {fileID: 1450009375645318336, guid: 4a6ab4710e0cd134296c6ef6149af129, type: 3}
     size: 5
     maxSize: 50
+  - tag: goblin2
+    prefab: {fileID: 1450009375645318336, guid: 1dfb4dcf5aff54e44a0f588532c55107, type: 3}
+    size: 5
+    maxSize: 50
+  - tag: golem2
+    prefab: {fileID: 1450009375645318336, guid: 7bd05b696af5dfe44867eaf19f1515af, type: 3}
+    size: 5
+    maxSize: 50
+  - tag: vampire2
+    prefab: {fileID: 1450009375645318336, guid: db041dc6f36949b41a5216b75d2f3a28, type: 3}
+    size: 5
+    maxSize: 50
+  - tag: goblin3
+    prefab: {fileID: 1450009375645318336, guid: c1910f9905b8e484c9061c2c182f9243, type: 3}
+    size: 5
+    maxSize: 50
+  - tag: golem3
+    prefab: {fileID: 1450009375645318336, guid: f0133d8520fd0c940b2d5318fbb751be, type: 3}
+    size: 5
+    maxSize: 50
+  - tag: vampire3
+    prefab: {fileID: 1450009375645318336, guid: 67b8af45e7fc2014faabfc97ecd6cdba, type: 3}
+    size: 5
+    maxSize: 50
 --- !u!114 &1113890944
 MonoBehaviour:
   m_ObjectHideFlags: 0
