@@ -7,18 +7,20 @@ public class Shooting : MonoBehaviour
 {
     public static float cooldownTime = 2;
     protected float waitTime;
+    private Animator anim;
 
-    // Start is called before the first frame update
-    //void Start()
-    //{
+    //Start is called before the first frame update
+    void Start()
+    {
+        anim = this.GetComponentInChildren<Animator>();
+        anim.speed = cooldownTime;
+    }
 
-    //}
+    //Update is called once per frame
+    protected void Update()
+    {
 
-    // Update is called once per frame
-    //protected void Update()
-    //{
-
-    //}
+    }
 
     /// <summary>
     /// Rotate player to the target direction
