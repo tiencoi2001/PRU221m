@@ -117,12 +117,24 @@ public class SpawnEnemyManager : MonoBehaviour, IDataPersistance
         canSave = true;
         state = SpawnState.COUNTING;
         waveCountDown = timeBetweenWaves;
-        GetNumberOfEnemy();
         nextWave++;
+        GetNumberOfEnemy();
     }
 
     private void GetNumberOfEnemy()
     {
+        if (nextWave == 1)
+        {
+            group = Group.Group2;
+            GroupConfig();
+            groupEnemy = Factory.CreateEnemy();
+        }
+        if (nextWave == 2)
+        {
+            group = Group.Group3;
+            GroupConfig();
+            groupEnemy = Factory.CreateEnemy();
+        }
         if (nextWave <= 10)
         {
             minEnemy = 10;
@@ -134,6 +146,9 @@ public class SpawnEnemyManager : MonoBehaviour, IDataPersistance
         }
         else if (nextWave <= 30)
         {
+            group = Group.Group2;
+            GroupConfig();
+            groupEnemy = Factory.CreateEnemy();
             minEnemy = 30;
             maxEnemy = 51;
         }
@@ -164,6 +179,9 @@ public class SpawnEnemyManager : MonoBehaviour, IDataPersistance
         }
         else if (nextWave <= 90)
         {
+            group = Group.Group3;
+            GroupConfig();
+            groupEnemy = Factory.CreateEnemy();
             minEnemy = 90;
             maxEnemy = 111;
         }

@@ -16,7 +16,6 @@ namespace Assets.Scripts.Entity.State
         {
             // Set animator to die animation
             enemy.GetComponent<Animator>().SetTrigger("IsDie");
-            enemy.GetComponent<Collider2D>().enabled = false;
         }
 
         public override void Update()

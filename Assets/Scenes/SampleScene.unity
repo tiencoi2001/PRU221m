@@ -61744,6 +61744,18 @@ MonoBehaviour:
     prefab: {fileID: 1450009375645318336, guid: 7bd05b696af5dfe44867eaf19f1515af, type: 3}
     size: 50
     maxSize: 50
+  - tag: goblin3
+    prefab: {fileID: 1450009375645318336, guid: c1910f9905b8e484c9061c2c182f9243, type: 3}
+    size: 50
+    maxSize: 50
+  - tag: vampire3
+    prefab: {fileID: 1450009375645318336, guid: 67b8af45e7fc2014faabfc97ecd6cdba, type: 3}
+    size: 50
+    maxSize: 50
+  - tag: golem3
+    prefab: {fileID: 1450009375645318336, guid: f0133d8520fd0c940b2d5318fbb751be, type: 3}
+    size: 50
+    maxSize: 50
 --- !u!114 &1113890944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61756,9 +61768,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d3181a066c5664c8db4c4a5437b091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  group: 1
+  group: 0
   waveCounter: {fileID: 1320898066}
-  timeBetweenWaves: 0
+  timeBetweenWaves: 1
 --- !u!1 &1116421798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4791044433749401729, guid: fd6473e6e4c5d6e45973137f52545072, type: 3}

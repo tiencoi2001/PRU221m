@@ -62,7 +62,6 @@ public class Enemy : MonoBehaviour
         {
             currentState.Exit();
         }
-        Debug.Log(newState.GetType().Name);
         currentState = newState;
 
         if (currentState != null)
@@ -103,6 +102,7 @@ public class Enemy : MonoBehaviour
     /// </summary>
     private void OnEnable()
     {
+        ChangeState(new WalkState(this));
         int wave = Convert.ToInt32(GameObject.Find("WaveCounter").GetComponent<Text>().text);
         int countIncreasing = wave / 5;
         atk = baseATK * (100 + 10 * countIncreasing) / 100;

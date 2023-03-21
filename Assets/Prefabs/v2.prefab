@@ -106,7 +106,7 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 1
   baseATK: 20
-  baseHP: 600
+  baseHP: 400
   attackRange: 1
   cdTime: 5
   MoveUnitsPerSecond: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
       - m_Target: {fileID: 5241367787464958395}
         m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
         m_MethodName: IsAlive
