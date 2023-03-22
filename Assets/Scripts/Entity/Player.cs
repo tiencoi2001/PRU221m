@@ -126,12 +126,12 @@ public class Player : MonoBehaviour, IBaseEntity
         }
         if (isMoving)
         {
-            animator.SetBool("Run", true);
+            animator.SetBool("IsIdle", false);
             PlayerState = State.MOVEMENT;
 
         } else
         {
-            animator.SetBool("Run", false);
+            animator.SetBool("IsIdle", true);
             PlayerState = State.IDLE;
         }
         ClampInScreen();

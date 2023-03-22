@@ -61756,6 +61756,10 @@ MonoBehaviour:
     prefab: {fileID: 1450009375645318336, guid: f0133d8520fd0c940b2d5318fbb751be, type: 3}
     size: 50
     maxSize: 50
+  - tag: bullet
+    prefab: {fileID: 148725120616052740, guid: 3749519c09f29da409dadba913bb8685, type: 3}
+    size: 50
+    maxSize: 50
 --- !u!114 &1113890944
 MonoBehaviour:
   m_ObjectHideFlags: 0
