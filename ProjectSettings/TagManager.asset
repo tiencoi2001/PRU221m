@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Cam
   - Wall
+  - Weapon
+  - FirePoint
+  - InputControl
+  - Enemy
   layers:
   - Default
   - TransparentFX

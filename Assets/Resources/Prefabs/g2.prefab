@@ -105,8 +105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 1
-  baseATK: 20
-  baseHP: 200
+  baseATK: 40
+  baseHP: 400
   attackRange: 1
   cdTime: 5
   MoveUnitsPerSecond: 0

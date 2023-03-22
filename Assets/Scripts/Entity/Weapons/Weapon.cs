@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Entity.Weapons
 {
@@ -8,7 +7,7 @@ namespace Assets.Scripts.Entity.Weapons
         [SerializeField]
         public float range;
 
-        public static float ATK = 600;
+        public static float ATK = 100;
         public static float critRate = 1;
 
         public GameObject FirePoint { get; set; }

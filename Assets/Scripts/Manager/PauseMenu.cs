@@ -24,11 +24,6 @@ public class PauseMenu : MonoBehaviour
         isPause = true;
     }
 
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene("Main");
-    }
-
     public void SaveGame()
     {
         Application.Quit();

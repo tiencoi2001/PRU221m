@@ -1,11 +1,5 @@
-using Assets.Scripts.Entity;
 using Assets.Scripts.Entity.State;
-using Assets.Scripts.Entity.Weapons;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.IO.LowLevel.Unsafe;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
