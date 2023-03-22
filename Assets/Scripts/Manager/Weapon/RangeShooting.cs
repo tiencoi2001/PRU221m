@@ -8,12 +8,13 @@ public class RangeShooting : Shooting
     [SerializeField]
     GameObject rangeWeapon;
     private float range;
+    ObjectPooler objectPooler;
     // Start is called before the first frame update
     void Start()
     {
         range = rangeWeapon.GetComponent<RangeWeapon>().range;
-        //Debug.Log(range);
         waitTime = cooldownTime;
+        objectPooler = ObjectPooler.Instance;
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class RangeShooting : Shooting
         if (target != null && cdFin && Vector3.Distance(player.transform.position, target.transform.position) <= range)
         {
             rotate(target);
-            shoot(rangeWeapon, gameObject);
+            shoot(gameObject, objectPooler);
             waitTime = 0;
         }
 

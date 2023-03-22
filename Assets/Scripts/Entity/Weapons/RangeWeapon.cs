@@ -16,7 +16,7 @@ public class RangeWeapon : Weapon
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (Vector3.Distance(player.transform.position, transform.position) > range)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
@@ -32,7 +32,7 @@ public class RangeWeapon : Weapon
             {
                 collision.gameObject.GetComponent<HealthSystem>().GotHitFor(ATK * 1.5f);
             }
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {
@@ -45,7 +45,7 @@ public class RangeWeapon : Weapon
     {
         if (collision.gameObject.name == "Map Boundary")
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

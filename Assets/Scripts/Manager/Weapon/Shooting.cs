@@ -7,13 +7,9 @@ public class Shooting : MonoBehaviour
 {
     public static float cooldownTime = 2;
     protected float waitTime;
-    private Animator anim;
-
     //Start is called before the first frame update
     void Start()
     {
-        anim = this.GetComponentInChildren<Animator>();
-        anim.speed = cooldownTime;
     }
 
     //Update is called once per frame
@@ -44,9 +40,9 @@ public class Shooting : MonoBehaviour
     /// 
     /// </summary>
     /// <param name="weapon"></param>
-    protected GameObject shoot(GameObject weapon, GameObject firePoint)
+    protected GameObject shoot(GameObject firePoint, ObjectPooler objectPooler)
     {
-        GameObject bullet = Instantiate<GameObject>(weapon, firePoint.transform.position, firePoint.transform.rotation);
+        GameObject bullet = objectPooler.SpawnFromPool("bullet", firePoint.transform.position, firePoint.transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.transform.up * 20f, ForceMode2D.Impulse);
         return bullet;
