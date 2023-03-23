@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -9180433012420658389}
   - component: {fileID: 6981245981538006138}
   - component: {fileID: 3506894677925508533}
+  - component: {fileID: 519618460697196761}
   m_Layer: 0
   m_Name: v1
   m_TagString: Enemy
@@ -231,6 +232,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &519618460697196761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450009375645318336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31620545da1ea8544af3dab1d8ba2621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 1
+  bulletSpeed: 5
+  enemyWeapon: {fileID: 4026890579924173227, guid: 3dc34bb40824007429073c1f1439d44b, type: 3}
 --- !u!1001 &6128742874302007304
 PrefabInstance:
   m_ObjectHideFlags: 0

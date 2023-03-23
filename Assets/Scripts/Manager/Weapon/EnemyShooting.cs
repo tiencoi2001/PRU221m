@@ -1,31 +1,41 @@
-using Assets.Scripts.Entity.Weapons;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class EnemyShooting : MonoBehaviour
 {
     [SerializeField]
-    public static float cooldownTime = 1;
+    public float cooldownTime = 1;
     [SerializeField]
-    public static float bulletSpeed = 5f;
+    public float bulletSpeed = 5f;
     protected float waitTime;
-    //Start is called before the first frame update
+    [SerializeField]
+    GameObject enemyWeapon;
+    private float range;
+    ObjectPooler objectPooler;
+
     void Start()
     {
+        range = enemyWeapon.GetComponent<EnemyWeapon>().range;
+        waitTime = cooldownTime;
+        objectPooler = ObjectPooler.Instance;
     }
 
-    //Update is called once per frame
-    protected void Update()
+    // Update is called once per frame
+    void Update()
     {
 
-    }
+        GameObject target;
+        target = getTarget("Player");
+        bool cdFin = CoolDownAttack(Time.deltaTime);
+        if (target != null && cdFin && Vector3.Distance(gameObject.transform.position, target.transform.position) <= range)
+        {
+            rotate(target);
+            shoot(gameObject, objectPooler);
+            waitTime = 0;
+        }
 
-    /// <summary>
-    /// Rotate player to the target direction
-    /// </summary>
-    /// <param name="target"></param>
-    /// <param name="weapon"></param>
+    }
     protected void rotate(GameObject target)
     {
         if (target != null)
@@ -45,10 +55,13 @@ public class Shooting : MonoBehaviour
     /// <param name="weapon"></param>
     protected GameObject shoot(GameObject firePoint, ObjectPooler objectPooler)
     {
-        GameObject bullet = objectPooler.SpawnFromPool("bullet", firePoint.transform.position, firePoint.transform.rotation);
-        
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.transform.up * bulletSpeed, ForceMode2D.Impulse);
+        GameObject bullet = objectPooler.SpawnFromPool("ebullet", firePoint.transform.position, firePoint.transform.rotation);
+
+        if (bullet != null)
+        {
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.transform.up * bulletSpeed, ForceMode2D.Impulse);
+        }
         return bullet;
     }
 
@@ -82,7 +95,7 @@ public class Shooting : MonoBehaviour
 
     protected bool CoolDownAttack(float deltaTime)
     {
-        Debug.Log(waitTime + "-" + cooldownTime); 
+        Debug.Log(waitTime + "-" + cooldownTime);
         if (waitTime >= cooldownTime)
         {
             return true;
